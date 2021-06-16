@@ -3,8 +3,13 @@ import Hero from '../components/Hero'
 import Layout from '../components/Layout'
 import Posts from '../components/Posts'
 import { graphql } from 'gatsby'
+import Footer from '../components/Footer'
 const IndexPage = () => {
-  return <h2>gatsby mdx blog starter</h2>
+  return (
+    <Layout>
+      <Hero  showPerson/>
+    </Layout>
+  )
 }
 
 export default IndexPage
