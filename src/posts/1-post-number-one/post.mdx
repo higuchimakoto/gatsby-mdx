@@ -6,9 +6,26 @@ date: 2020-05-02
 author: john smith
 category: HTML&CSS
 readTime: 50
+embeddedImages:
+  - ./images/html-1.png
+  - ./images/html-2.png
+  - ./images/html-3.png
 ---
 
 import { Link } from 'gatsby'
+import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+
+<GatsbyImage
+  image={getImage(props.embeddedImages[0])}
+  alt="random stuff"
+  className="first-inline-img"
+/>
+
+<GatsbyImage
+  image={getImage(props.embeddedImages[1])}
+  alt="random stuff"
+  className="first-inline-img"
+/>
 
 
 

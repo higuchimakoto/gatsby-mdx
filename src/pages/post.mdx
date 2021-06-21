@@ -1,0 +1,69 @@
+import { Link } from 'gatsby'
+import { FiInfo } from 'react-icons/fi'
+import { Counter, LikeButton, RegVideo,Video } from '../components/Complete'
+
+<section className="mdx-page">
+
+## my first mdx file
+
+**I'm baby gochujang seitan fam ennui jianbing schlitz affogato skateboard direct trade venmo. Hoodie cred marfa, dreamcatcher gochujang meggings kale chips photo booth master cleanse tote bag flexitarian umami selfies fanny pack.** Direct trade vice pork belly before they sold out subway tile. Franzen unicorn trust fund, roof party raw denim locavore semiotics tumeric shaman tote bag sartorial kogi slow-carb. Art party tote bag vexillologist slow-carb lomo poke. _Readymade sustainable bespoke narwhal._
+
+<div className="code">
+
+```js
+const firstName = 'john'
+const lastName = 'smith'
+```
+
+</div>
+
+<div className="nice-text">
+
+<h3>nice text </h3>
+
+<FiInfo className="nice-text-icon"></FiInfo>
+
+'m baby gochujang seitan fam ennui jianbing schlitz affogato skateboard direct trade venmo. Hoodie cred marfa, dreamcatcher gochujang meggings kale chips photo booth master cleanse tote bag flexitarian umami selfies fanny pack. Direct trade vice pork belly before they sold out subway tile. Franzen unicorn trust fund, roof party raw denim locavore semiotics tumeric shaman tote bag sartorial kogi slow-carb. Art party tote bag vexillologist slow-carb lomo poke. Readymade sustainable bespoke narwhal.
+
+</div>
+
+<h2> React Components </h2>
+
+<Counter />
+
+```jsx
+import React from 'react'
+import styled from 'styled-components'
+import { AiOutlineLike } from 'react-icons/ai'
+const LikeButton = () => {
+  const [value, setValue] = React.useState(0)
+  return (
+    <Wrapper>
+      <div>
+        <button onClick={() => setValue(value + 1)}>
+          <AiOutlineLike />
+        </button>
+        <p>
+          Liked the post?
+          <br />
+          Click thumbs up few times
+        </p>
+      </div>
+      <span>+{value}</span>
+    </Wrapper>
+  )
+}
+```
+
+<LikeButton />
+
+<h2>
+  Video Component
+</h2>
+<RegVideo/>
+<Video/>
+
+<Link to="/posts" className="btn center-btn">
+  all posts
+</Link>
+</section>

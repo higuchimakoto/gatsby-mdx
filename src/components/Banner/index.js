@@ -3,11 +3,19 @@ import styled from 'styled-components'
 import About from './About'
 import Recent from './Recent'
 import BannerCategories from './BannerCategories'
-const Banner = () => {
+import { graphql } from 'gatsby'
+
+const Banner = (props) => {
+
   return (
-    <Wrapper>Banner</Wrapper>
+    <Wrapper>
+      <About />
+      <Recent />
+      <BannerCategories />
+    </Wrapper>
   )
 }
+
 
 const Wrapper = styled.aside`
   display: grid;
